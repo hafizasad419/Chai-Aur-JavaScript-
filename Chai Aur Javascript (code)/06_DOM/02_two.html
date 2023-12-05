@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | Chai aur code</title>
+</head>
+
+<body style="background-color: #212121; color: #ffffff;">
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </div>
+</body>
+
+<script>
+    let parent = document.querySelector('.parent');
+    //    console.log(parent);
+    //    console.log(parent.children)
+    //    console.log(parent.children[0])
+    // for (let i = 0; i < parent.children.length; i++) {
+    //    console.log(parent.children[i].innerText)
+
+    // }
+
+    // Following loop is just for motivational purposes haha. 
+    // for (let i = 0; i <= 200; i++) {
+    //     console.log(`Asad is Best`);
+    //     console.log(`Asad is Number One`);
+
+    // }
+
+    // O K A Y    B R O ,     B E    S E R I O U S
+
+    //    let children = parent.children
+    //    let childArr = Array.from(children)
+    //   console.log(childArr[0].innerText)
+    //   console.log(childArr[1].innerText)
+    //   console.log(childArr[2].innerText)
+    //   console.log(childArr[3].innerText)
+
+
+    // parent.children[0].style.color="orange"
+    // parent.children[1].style.color="yellow"
+    // parent.children[2].style.color="maroon"
+    // parent.children[3].style.color="pink"
+
+
+    // console.log(parent.firstElementChild);
+    // console.log(parent.lastElementChild);
+
+
+    // To target parent element from child element
+    // console.log( 
+    //     document.querySelector('.day').parentElement)
+
+    // To target sibling element from another sibling element
+
+    //    console.log( 
+    //  document.querySelector('.day').nextElementSibling)
+
+    // Gives all child nodes of a element
+    // console.log(parent.childNodes);
+    console.log(parent.childNodes[0]);
+    console.log(parent.childNodes[1]); //and so on
+
+
+
+
+
+</script>
+
+</html>

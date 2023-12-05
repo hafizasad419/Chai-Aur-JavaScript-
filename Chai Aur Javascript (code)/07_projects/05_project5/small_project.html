@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            color: #212121;
+            background-color: #f1f0f0;
+            font-family: 'poppins';
+            text-align: center;
+        }
+
+        button {
+            font-weight: 600;
+            cursor: pointer;
+            border-radius: 6px;
+            background-color: #fff;
+            padding: 5px 13px;
+            transition: 1s;
+        }
+
+        button:hover {
+            /* padding: 8px 17px; */
+            transition: 0.5s;
+            font-size: 1.4rem;
+        }
+
+        #start {
+            color: #078e07;
+        }
+
+        #stop {
+            color: #ff0000;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Start Should Change The Background color of the body each time</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+
+    <span id="time"></span>
+</body>
+
+
+<script>
+
+    let randomColor = function () {
+        let hex = "0123456789ABCDEF"
+
+        let color = "#"
+
+        for (let i = 0; i < 6; i++) {
+            color += hex[Math.floor(Math.random() * 16)]
+        }
+
+        return color
+    }
+
+    console.log(randomColor());
+
+
+
+    //just for studying purpose
+    // console.log(Math.ceil(Math.random()*16));
+
+    //ok let's proceed
+    let myInterval;
+    document.querySelector('#start').addEventListener('click', function () {
+        if (!myInterval) {
+            myInterval = setInterval(function () {
+                document.body.style.backgroundColor = randomColor()
+            }, 1000)
+        }
+
+    })
+
+
+
+
+
+
+
+
+    document.querySelector('#stop').addEventListener('click', function () {
+        clearInterval(myInterval)
+        myInterval = null
+    })
+
+</script>

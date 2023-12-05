@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #212121;
+            color: #f1f0f0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Chai aur JavaScript</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+
+    <span id="time"></span>
+</body>
+<script>
+
+    setInterval(function () {
+        // console.log(new Date().toLocaleTimeString());
+    }, 1000);
+
+    // same goal but with a bit different approach
+
+    let showDate = function () {
+        console.log(new Date().toLocaleTimeString());
+    }
+
+    // let interval = setInterval(showDate, 2000)
+
+    // clearInterval(interval)
+
+
+
+    //A Small Assignment, clicking on start button displays the current time, and clicking on stop button stop displaying the current time.
+    let myInterval;
+    document.querySelector('#start').addEventListener('click', function () {
+        myInterval = setInterval(function () {
+            document.querySelector('#time').innerHTML = new Date().toLocaleTimeString()
+        }, 10) //it is 10milliSeconds not a single second , 1000ms = 1s
+    })
+
+
+
+    document.querySelector('#stop').addEventListener('click', function () {
+        clearInterval(myInterval)
+        document.querySelector('#time').innerHTML = ''
+    })
+
+
+</script>
+
+</html>

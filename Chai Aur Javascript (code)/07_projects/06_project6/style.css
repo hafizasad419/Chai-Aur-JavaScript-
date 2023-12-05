@@ -1,0 +1,62 @@
+* {
+    font-family: 'poppins';
+}
+
+body {
+    background-color: #ffa500;
+    color: #4a0090;
+    text-align: center;
+
+}
+
+/* Add this style to create a gradient background for the table */
+/* Updated styles to center the table */
+.project table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 600px;
+    /* Adjust the max-width as needed */
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(to right, #f79ead, #f606f6);
+    /* Gradient colors */
+    margin: auto;
+    /* Center horizontally */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Center vertically and horizontally */
+}
+
+
+/* Style for the table headers */
+.project th {
+    background-color: #4a0090;
+    /* Purple background for headers */
+    color: #ffffff;
+    /* White text color for headers */
+    padding: 15px;
+    text-align: center;
+}
+
+/* Style for the table cells */
+.project td {
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: #4a0090;
+    /* Purple text color for cells */
+}
+
+/* Hover effect on table rows */
+
+.project tr{
+transition: 1s;
+}
+
+.project tr:hover {
+    background-color: rgba(219, 219, 219, 0.337);
+    transition: background-color 0.5s  ease;
+}

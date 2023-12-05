@@ -1,0 +1,41 @@
+* {
+    font-family: 'poppins';
+    padding: 0;
+    margin: 0;
+
+
+}
+
+body {
+    background-color: #ffa500;
+}
+
+.flex {
+    height: 80vh;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    /* background-color: #fff; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5vw;
+
+
+}
+
+#banner {
+    /* background-color: red; */
+    padding: 10px 30px;
+    font-weight: 700;
+   
+}
+
+#clock {
+    font-size: 1rem;
+    background-color: green;
+    font-weight: 500;
+    /* width: 10vw; */
+    padding: 20px 40px;
+    border-radius: 50px;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur code</title>
+</head>
+
+<body style="background-color: #212121; color: #ffffff;">
+
+</body>
+
+<script>
+    //    let div =  document.createElement('div')
+    // console.log(div);
+    let h1 = document.createElement('h1')
+    h1.className = "mainHeading"
+    // h1.id = "mainHeading"
+    // h1.id = (Math.random() * 10).toFixed('2')  //hehe
+    h1.id = Math.ceil(Math.random() * 10) + 1 //hehe2
+    h1.setAttribute('title', 'I am title')
+    h1.style.backgroundColor = 'orange'
+    // h1.innerText = "I am heading 1"
+    //another way of adding content:
+    let h1Text = document.createTextNode("I am h1")
+    h1.appendChild(h1Text)
+    //to show on page:
+    // document.body.appendChild(h1)
+
+    // console.log(h1);
+
+
+    //P R A C T I C E 
+
+
+    let div = document.createElement('div')
+    div.innerText = 'hehe, I am a div'
+    div.className = 'first_div'
+    div.id = 'hehe_div'
+    // div.id = Math.floor(Math.random() * 10) + 1
+
+    // let min = 1
+    // let max = 10
+
+    // div.id = Math.floor(Math.random() * ((max - min) + 1) + min)
+
+    
+
+
+
+
+
+
+
+
+
+    div.style.backgroundColor = 'yellow'
+    div.style.color = 'black'
+    div.style.fontSize = '2rem'
+    div.setAttribute('title', 'div')
+
+
+
+
+    //    let textNode =  document.createTextNode('hey, I am a text node')
+    //     div.appendChild(textNode)
+
+    document.body.appendChild(div)
+
+
+
+    console.log(div);
+
+
+
+
+
+</script>
+
+</html>

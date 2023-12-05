@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #212121;
+            color: #f1f0f0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Chai aur Code</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    // setTimeout(function () {
+    //     console.log("Asad");
+    // }, 5000) //it performs the task given in function after specified time in millisecond        
+    // (1000ms=1s)
+
+    // another way of using set timeout(), first declaring the function and then giving its reference.
+
+    // function sayMyName() {
+    //     console.log("Asad Riaz");
+    // }
+
+    // setTimeout(sayMyName, 4000)
+
+    // changing page heading after 5s (DOM Manipulation Inside setTimeout())
+    let changePageHeading = function () {
+        let h1 = document.querySelector('h1')
+        h1.innerHTML = "Best Javascript Series"
+    }
+
+    let timeOut = setTimeout(changePageHeading, 2000)
+
+    document.querySelector('#stop').addEventListener('click', function () {
+        clearTimeout(timeOut)
+        console.log('stopped');
+    })
+
+
+
+
+
+</script>
+
+</html>
