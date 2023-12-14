@@ -27,8 +27,10 @@ Welcome to Chai-Aur-JavaScript, a coding practice repository designed to enhance
 - Explained numeric data types and basic math operations.
 
 #### 07_dates_in_JS.js
-- Covered date-related operations in JavaScript.
+- Covered Date object and all date related operations in JS.
+
   ---
+  
 
 ### 02_basics
 
