@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai, Closure aur lexical scoping</title>
+    <style>
+        body {
+            background-color: #212121;
+            min-height: 100vh;
+            min-width: 100vw;
+            overflow: hidden;
+        }
+
+        .buttons {
+            /* background-color: red; */
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        button {
+            width: 75px;
+            margin-left: 25px;
+            height: 33px;
+            border: none;
+            border-radius: 9%;
+            outline: none;
+            background-color: #414141;
+            color: #ffffff;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+
+        #green:hover {
+            background-color: rgb(37, 85, 37);
+            transform: scale(1.2);
+            transition: 0.5s;
+        }
+
+        #orange:hover {
+            background-color: rgb(167, 117, 25);
+            transform: scale(1.2);
+            transition: 0.5s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="buttons">
+        <button id="green">Green</button>
+        <button id="orange">Orange</button>
+    </div>
+</body>
+
+<script>
+
+    let green = document.querySelector('#green')
+    let orange = document.querySelector('#orange')
+
+
+
+    function clickHandler(color) {
+        
+    return function(){
+        document.body.style.backgroundColor = `${color}`
+    }
+
+ }
+
+ green.onclick = clickHandler('green')
+ orange.onclick = clickHandler('orange')
+
+// following approaches can do this task directly but we did above example to properly understand lexical scoping.
+
+
+//    function greenBody(){
+//      document.body.style.backgroundColor = 'green'
+//    }
+//    function orangeBody(){
+//     document.body.style.backgroundColor = 'orange'
+//    }
+
+
+//    green.onclick  = greenBody
+//    orange.onclick  = orangeBody
+
+   
+
+
+    // green.onclick = function () {
+    //     document.body.style.backgroundColor = 'green'
+    // }
+    // orange.onclick = function () {
+    //     document.body.style.backgroundColor = 'orange'
+    // }
+
+</script>
+
+
+
+<script>
+
+    //hehe, alternative approach for click events and most recommeded
+
+    //     let green = document.querySelector('#green')
+    //     let orange = document.querySelector('#orange')
+
+    //     green.addEventListener('click', function (e) {
+    //         e.preventDefault();
+    //         document.body.style.backgroundColor = 'green'
+    //     });
+
+    //     orange.addEventListener('click', function (e) {
+    //         e.preventDefault();
+    //         document.body.style.backgroundColor = 'orange'
+    //     })
+</script>
+
+</html>
