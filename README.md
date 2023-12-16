@@ -211,7 +211,70 @@ Welcome to Chai-Aur-JavaScript, a coding practice repository designed to enhance
 - **Name:** Promise Practice
 - **Description:** JavaScript file for practicing and showcasing various examples related to promises.
 
+---
 
+### 11_classes_and_OOP
+
+#### OOP.js
+- **Name:** OOP JavaScript
+- **Description:** General overview of Object-Oriented Programming (OOP) in JavaScript.
+
+#### bind.html
+- **Name:** Binding HTML
+- **Description:** HTML file related to binding in JavaScript.
+
+#### call.js
+- **Name:** Call JavaScript
+- **Description:** JavaScript file demonstrating the use of the `call` method.
+
+#### getter_setter.js
+- **Name:** Getter and Setter JavaScript
+- **Description:** Example of getter and setter methods in JavaScript.
+
+#### inheritance.js
+- **Name:** Inheritance JavaScript
+- **Description:** Illustration of inheritance in JavaScript.
+
+#### mathPi.js
+- **Name:** Math.PI JavaScript
+- **Description:** Usage of the `Math.PI` constant.
+
+#### myClass.js
+- **Name:** MyClass JavaScript
+- **Description:** Implementation of a custom class.
+
+#### notes.md
+- **Name:** Notes Markdown
+- **Description:** Documentation notes covering the topics in this folder.
+
+#### object.js
+- **Name:** Object JavaScript
+- **Description:** File showcasing object-related concepts.
+
+#### prototype.js
+- **Name:** Prototype JavaScript
+- **Description:** Explanation of prototype in JavaScript.
+
+#### prototypePractice.js
+- **Name:** Prototype Practice JavaScript
+- **Description:** Practical examples of using prototypes.
+
+#### staticProp.js
+- **Name:** Static Property JavaScript
+- **Description:** Usage of static properties in classes.
+
+---
+
+### closure_&_lexical_scoping
+
+#### closure.html
+- **Name:** Closure HTML
+- **Description:** HTML file associated with closures.
+
+#### closure.js
+- **Name:** Closure JavaScript
+- **Description:** JavaScript file demonstrating closures.
+ 
 
 
 
