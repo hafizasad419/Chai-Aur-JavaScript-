@@ -92,7 +92,7 @@ let str8 = ("1" + 5 + 6)
 // console.log(null > 0); // output: false
 // console.log(null < 0); // output: false
 // console.log(null == 0); // output: false
-// console.log(null == 0); // output: true /* In this case silly JS just converted null to 0 and then compared it haha*/
+// console.log(null >= 0); // output: true /* In this case silly JS just converted null to 0 and then compared it haha*/
 
 
 // console.log("2" == 2); //output: true  // coz it converted "2" to 2
